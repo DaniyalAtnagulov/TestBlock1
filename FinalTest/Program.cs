@@ -2,7 +2,12 @@
 string [] originalarray = new string [9] {"[","10,", "1034,", "555,", "674,", "321,", "8,", "x","]"};
 string [] newarray = new string [originalarray.Length];
 
-
+Console.Write("Original array: ");
+PrintArray(originalarray);
+Console.WriteLine();
+FilterArray(originalarray, newarray);
+Console.Write("New array: -> ");
+PrintArray(newarray);
 void FilterArray(string[] firstarray, string[] secondaray)
 {
     int count = 0;
